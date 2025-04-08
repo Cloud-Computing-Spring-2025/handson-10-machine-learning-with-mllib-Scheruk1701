@@ -27,13 +27,15 @@ Clean the dataset and prepare features for ML algorithms.
 
 **Code Output:**
 ```
-Label distribution:
-+-----+-------+
-|label|count  |
-+-----+-------+
-|0.0  |5174   |
-|1.0  |1869   |
-+-----+-------+
++----------------------------------------+-----+
+|features                                |label|
++----------------------------------------+-----+
+|(8,[1,2,4,7],[30.0,53.42,1.0,1.0])      |0.0  |
+|[0.0,16.0,82.08,1353.4,1.0,1.0,1.0,0.0] |0.0  |
+|[0.0,69.0,37.17,2278.78,0.0,1.0,0.0,1.0]|0.0  |
+|[1.0,27.0,57.86,1392.56,1.0,1.0,0.0,1.0]|0.0  |
+|[1.0,2.0,72.97,158.7,0.0,0.0,1.0,0.0]   |0.0  |
++----------------------------------------+-----+
 ```
 
 ---
@@ -100,17 +102,13 @@ Use CrossValidator to tune models and compare their AUC performance.
 ```
 Tuning LogisticRegression...
 LogisticRegression AUC: 0.7632
-
 Tuning DecisionTree...
 DecisionTree AUC: 0.7008
-
 Tuning RandomForest...
-RandomForest AUC: 0.7906
-
+RandomForest AUC: 0.7961
 Tuning GBTClassifier...
-GBTClassifier AUC: 0.7643
-
-Best model: RandomForest with AUC = 0.7906
+GBTClassifier AUC: 0.7523
+Best model: RandomForest with AUC = 0.7961
 ```
 
 ## Execution Instructions

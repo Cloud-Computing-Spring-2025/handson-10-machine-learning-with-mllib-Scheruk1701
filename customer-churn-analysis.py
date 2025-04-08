@@ -93,6 +93,8 @@ def tune_and_compare_models(df):
 
 # Execute tasks
 preprocessed_df = preprocess_data(df)
+preprocessed_df.show(5, truncate=False)
+preprocessed_df.printSchema()
 train_logistic_regression_model(preprocessed_df)
 feature_selection(preprocessed_df)
 tune_and_compare_models(preprocessed_df)
